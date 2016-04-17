@@ -1,0 +1,26 @@
+{
+  "name": "urban-garden-home",
+  "version": "0.1.5",
+  "description": "Urban Garden Home",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.13.3",
+    "jade": "1.11.0"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hieupious/UrbanGarden.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
