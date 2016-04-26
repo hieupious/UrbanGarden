@@ -1363,6 +1363,13 @@
                 var translate3d = 'translate3d(0px, -' + v.dtop + 'px, 0px)';
                 transformContainer(translate3d, true);
 
+
+                // Add class to navbar on scroll
+				if (v.dtop!=0){
+					$('.navbar-fixed-top').addClass('navbar-shrink');
+				}else{
+					$('.navbar-fixed-top').removeClass('navbar-shrink');
+				};
                 //even when the scrollingSpeed is 0 there's a little delay, which might cause the
                 //scrollingSpeed to change in case of using silentMoveTo();
                 if(options.scrollingSpeed){
