@@ -19,7 +19,7 @@
 	<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Custom CSS-->
-	<link href="css/urban_styles.css" rel="stylesheet">
+	<link href="css/urban_styles_new.css" rel="stylesheet" />
 </head>
 
 <body id="home">
@@ -37,39 +37,43 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#main">Urban Garden</a>
+				<a class="navbar-brand" href="index.html">Urban Garden</a>
 			</div>
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav-lang navbar-right">
 					<li class="lang_text">
-						<a href="#">Vietnamese</a>
-						<a href='#'>English</a>
+						<a href="#" class="active">Tiếng Việt</a>
+						<a href="#">English</a>
 					</li>
 					<li>
-						<a class="btn btn-primary">Sign In</a>
+						<a href="#" class="btn btn-primary">Hello, Chippy</a>
+					</li>
+					<li>
+						<a href="#" class="btn btn_cart">Cart</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav">
-					<li class="menuItem"><a href="#our-products">Our products</a></li>
-					<li class="menuItem"><a href="#outlet-store">Outlet store</a></li>
-					<li class="menuItem"><a href="#showroom">Showroom</a></li>
-					<li class="menuItem"><a href="#premier">UR Premier</a></li>
-					<li class="menuItem"><a href="#stories">Stories</a></li>
-					<li class="menuItem"><a href="#stories">Contact</a></li>
+					<li class="menuItem" data-menuanchor="product_page"><a href="#product_page">Our products</a></li>
+					<li class="menuItem" data-menuanchor="outlet_page"><a href="#outlet_page">Outlet store</a></li>
+					<li class="menuItem" data-menuanchor="showroom_page"><a href="#showroom_page">Showroom</a></li>
+					<li class="menuItem" data-menuanchor="premier_page"><a href="#premier_page">LQ Premier</a></li>
+					<li class="menuItem" data-menuanchor="stories_page"><a href="#stories_page">Stories</a></li>
+					<li class="menuItem" data-menuanchor="contact_page"><a href="#contact_page">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<div id="homepage_wrapper">
 		<!-- FullScreen -->
-		<div id="section0" class="intro-header section section-0" data-anchor="main">
+		<div id="section0" class="intro-header section section-0">
 			<div class="col-xs-12 text-center intro_textholder">
-				<h1 class="h1_home animated zoomIn">THE 2016 CATALOG</h1>
-				<h3 class="h3_home animated zoomIn">DISCOVERY THE NEW LQ<small>INTERNATIONAL</small>CATALOG</h3>
+				<h1 class="h1_home animated zoomIn">TO TOUCH THE EARTH</h1>
+				<h2 class="h2_home animated zoomIn">IS TO HAVE HARMONY WITH</h2>
+				<h3 class="h3_home animated zoomIn">NATURE</h3>
 			</div>
 		</div>
 		<!-- Section 1 -->
-		<div id="section1" class="section section-1"  data-anchor="our-products">
+		<div id="section1" class="section section-1">
 			<div class="slide" id="slide1" data-name="EVER BAMBOO" style="background-image: url(img/section1_bg.jpg);">
 				<h1>
 					Ever bamboo
@@ -101,17 +105,14 @@
 			</div>
 		</div>
 		<!-- Section 2 -->
-		<div id="section2" class="section section-2" data-anchor="outlet-store">
+		<div id="section2" class="section section-2">
 			<div class="container">
 				<h1 class="headtext_1">
 					Outlet store
 					<p class="descp">Lorem ipsum dolor sit amet, consadipiscing elit, sed do eiusmod teincididuntut labore et dolore ma enim ad minim ve.</p>
 					<p><a href='#' class="btn btn-primary">Shop all</a></p>
-					<span class="product_img"><img src="img/product_img1.png" /></span>
+					<span class="product_img fadeInDown"><img src="img/product_img1.png" /></span>
 				</h1>
-				<div class="productphoto_obj fadeInDown">
-					<img src="img/product_img1.png" alt="" />
-				</div>
 				<h2>
 					<a href='#'>FURNITURE</a>
 					<span>ACCESSORIES</span>
@@ -120,7 +121,7 @@
 			</div>
 		</div>
 		<!-- Section 3 -->
-		<div id="section3" class="section section-3" data-anchor="showroom">
+		<div id="section3" class="section section-3">
 			<div class="container">
 				<h1 class="fadeInUp">
 					<span>VIRTUAL</span>SHOWROOM
@@ -130,7 +131,7 @@
 			</div>
 		</div>
 		<!-- Section 5 -->
-		<div id="section4" class="section section-4"  data-anchor="premier">
+		<div id="section4" class="section section-4">
 			<div class="container">
 				<h1 class="bounceInUp">
 					<span>Urban Garden</span>Premier
@@ -139,7 +140,19 @@
 			</div>
 		</div>
 		<!-- Section 5 -->
-		<div id="section5" class="section section-5" data-anchor="stories">
+		<div id="section5" class="section section-5">
+			<div class="section_colphoto">
+				<div class="photo_col fadeInUp" style="background-image: url(img/photo1.jpg);">
+					<p>
+						<img src="img/logopn_lq.png" />
+					</p>
+				</div>
+				<div class="photo_col fadeInDown" style="background-image: url(img/photo2.jpg);">
+					<p>
+						<img src="img/logopn_takasho.png" />
+					</p>
+				</div>
+			</div>
 			<div class="container section5_content">
 				<h1>
 					Our stories
@@ -153,36 +166,27 @@
 						<a href="#" class="btn btn-primary">Discover more</a>
 					</p>
 				</h1>
-				<div class="section_colphoto">
-					<div class="photo_col fadeInUp" style="background-image: url(img/photo1.jpg);">
-						<p>
-							<img src="img/logopn_lq.png" />
-						</p>
-					</div>
-					<div class="photo_col fadeInDown" style="background-image: url(img/photo2.jpg);">
-						<p>
-							<img src="img/logopn_takasho.png" />
-						</p>
-					</div>
-				</div>
 			</div>
-			<footer>
+		</div>
+		<div id="section6" class="section section-6 fp-auto-height">
+			<footer style="height: 400px; padding-top:30px">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-2 footer_brand">
+						<div class="col-sm-2 col-xs-12 footer_brand">
 							<a href='index.html'><img src="img/urbangarden_logo.png"></a>
 						</div>
-						<div class="col-xs-3 footer_col footer_link">
+						<div class="col-sm-4 col-xs-4 footer_col footer_link col-sm-offset-1 col-xs-offset-2">
 							<p>Home</p>
 							<ul>
-								<li><a href='#'>Our Products</a></li>
-								<li><a href='#'>Outlet store</a></li>
+								<li><a href='#'>OUR PRODUCTS</a></li>
+								<li><a href='#'>OUTLET STORE</a></li>
 								<li><a href='#'>VIRTUAL SHOWROOM</a></li>
-								<li><a href="#">UG PREMIER</a></li>
+								<li><a href="#">LQ PREMIER</a></li>
 								<li><a href='#'>OUR STORIES</a></li>
+								<li><a href='#'>DESIGN BLOG</a></li>
 							</ul>
 						</div>
-						<div class="col-xs-3 footer_col">
+						<div class="col-sm-5 col-xs-6 footer_col">
 							<p>Contact</p>
 							<ul>
 								<li><a href='#'>MAPS</a></li>
@@ -191,9 +195,10 @@
 								<li><a href="#" mailto:"hello@urbangarden.com">hello@urbangarden.com</a></li>
 							</ul>
 						</div>
-						<div class="col-xs-4 footer_col">
-							<img src="img/footer_brand_logo.png">
-						</div>
+					</div>
+					<div class="copyright_text">
+						URBAN GARDEN
+						<span>Copyright 2016</span>
 					</div>
 				</div>
 			</footer>
@@ -202,10 +207,58 @@
 	<!-- JavaScript -->
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/jquery.fullPage_new.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript">
+		function sliderPanelSize() {
+			$( ".fp-slidesNav li a span" ).css({
+					"height": $(window).height(),
+					"width": $(window).height()
+				});
+		}
+		$(window).on("load", sliderPanelSize);
+		$(window).on("resize", sliderPanelSize);
 
+		// Fullpage
+		$('#homepage_wrapper').fullpage({
+			anchors: ['home_page','product_page', 'outlet_page', 'showroom_page', 'premier_page', 'stories_page','contact_page'],
+			menu: '.navbar-nav',
+			fitToSection: false,
+			navigation: true,
+			navigationPosition: 'right',
+			slidesNavigation: true,
+			slidesNavPosition: "right",
+			controlArrows: true,
+			afterRender: function () {
+		        //on page load, start the slideshow
+		         slideTimeout = setInterval(function () {
+		                $.fn.fullpage.moveSlideRight();
+		            }, 8000);
+		    },
+		    onLeave: function (index, direction) {
+		        //after leaving section 1 (home) and going anywhere else, whether scrolling down to next section or clicking a nav link, this SHOULD stop the slideshow and allow you to navigate the site...but it does not
+		        if (index == '3') {
+		            console.log('on leaving the slideshow/section3');
+		            clearInterval(slideTimeout);
+		        }
+		   },
+			afterLoad: function(anchorLink, index){
+					if(index == 3){
+						$('.fadeInDown').addClass('animated');
+					}
+					if(index == 4){
+						$('.fadeInUp').addClass('animated');
+					}
+					if(index == 5){
+						$('.bounceInUp').addClass('animated');
+					}
+					if(index == 6){
+						$('.fadeInUp , .fadeInDown').addClass('animated');
+					}
+				}
+		});
+	</script>
+	<!-- <script src="js/jquery.slimscroll.min.js"></script> -->
 </body>
 
 </html>
