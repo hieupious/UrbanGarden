@@ -37,7 +37,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#home_page">Urban Garden</a>
+				<a class="navbar-brand" href="#main">Urban Garden</a>
 			</div>
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav-lang navbar-right">
@@ -53,13 +53,13 @@
 					</li>
 				</ul>
 				<ul class="nav navbar-nav">
-					<li class="menuItem" data-menuanchor="product_page"><a href="#product_page">Our products</a></li>
-					<li class="menuItem" data-menuanchor="outlet_page"><a href="#outlet_page">Outlet store</a></li>
-					<li class="menuItem" data-menuanchor="showroom_page"><a href="#showroom_page">Showroom</a></li>
-					<li class="menuItem" data-menuanchor="premier_page"><a href="#premier_page">LQ Premier</a></li>
-					<li class="menuItem" data-menuanchor="stories_page"><a href="#stories_page">Stories</a></li>
+					<li class="menuItem" data-menuanchor="product"><a href="#product">Our products</a></li>
+					<li class="menuItem" data-menuanchor="outlet"><a href="#outlet">Outlet store</a></li>
+					<li class="menuItem" data-menuanchor="showroom"><a href="#showroom">Showroom</a></li>
+					<li class="menuItem" data-menuanchor="premier"><a href="#premier">LQ Premier</a></li>
+					<li class="menuItem" data-menuanchor="stories"><a href="#stories">Stories</a></li>
 					<li class="menuItem"><a href="#">Design Blog</a></li>
-					<li class="menuItem" data-menuanchor="contact_page"><a href="#contact_page">Contact</a></li>
+					<li class="menuItem" data-menuanchor="contact"><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -210,55 +210,6 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
 	<script src="js/script.js"></script>
-	<script type="text/javascript">
-		function sliderPanelSize() {
-			$( ".fp-slidesNav li a span" ).css({
-					"height": $(window).height(),
-					"width": $(window).height()
-				});
-		}
-		$(window).on("load", sliderPanelSize);
-		$(window).on("resize", sliderPanelSize);
-
-		// Fullpage
-		$('#homepage_wrapper').fullpage({
-			anchors: ['home_page','product_page', 'outlet_page', 'showroom_page', 'premier_page', 'stories_page','contact_page'],
-			menu: '.navbar-nav',
-			fitToSection: false,
-			navigation: true,
-			navigationPosition: 'right',
-			slidesNavigation: true,
-			slidesNavPosition: "right",
-			controlArrows: true,
-			afterRender: function () {
-		        //on page load, start the slideshow
-		         slideTimeout = setInterval(function () {
-		                $.fn.fullpage.moveSlideRight();
-		            }, 8000);
-		    },
-		    onLeave: function (index, direction) {
-		        //after leaving section 1 (home) and going anywhere else, whether scrolling down to next section or clicking a nav link, this SHOULD stop the slideshow and allow you to navigate the site...but it does not
-		        if (index == '3') {
-		            console.log('on leaving the slideshow/section3');
-		            clearInterval(slideTimeout);
-		        }
-		   },
-			afterLoad: function(anchorLink, index){
-					if(index == 3){
-						$('.fadeInDown').addClass('animated');
-					}
-					if(index == 4){
-						$('.fadeInUp').addClass('animated');
-					}
-					if(index == 5){
-						$('.bounceInUp').addClass('animated');
-					}
-					if(index == 6){
-						$('.fadeInUp , .fadeInDown').addClass('animated');
-					}
-				}
-		});
-	</script>
 	<!-- <script src="js/jquery.slimscroll.min.js"></script> -->
 </body>
 
